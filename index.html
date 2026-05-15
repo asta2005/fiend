@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIEND — Horror Musical · Karuga Studios</title>
+  <meta name="description" content="FIEND is a first-person psychological horror game set in a decaying family entertainment center. Built with Unreal Engine 5 by Karuga Studios.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="noise-layer"></div>
+<div class="scanline-layer"></div>
+
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-close" id="lightbox-close">✕</div>
+  <img id="lightbox-img" src="" alt="FIEND artwork">
+</div>
+
+
+<nav class="nav-mobile">
+  <div class="nav-mobile-close">✕</div>
+  <a href="#about">About</a>
+  <a href="#videos">Videos</a>
+  <a href="#band">The Band</a>
+  <a href="#music">Music System</a>
+  <a href="#soundtrack">Soundtrack</a>
+  <a href="#narrative">Story</a>
+  <a href="#investor">Investors</a>
+  <a href="https://karuga.nl/horror-engine" target="_blank" style="color:#cc1111">▶ Play Demo</a>
+</nav>
+
+
+<nav id="main-nav">
+  <div class="nav-inner">
+
+   
+    <a href="#hero" class="nav-logo">
+      <span class="nav-logo-text">FIEND</span>
+      <div class="nav-logo-divider"></div>
+      <div class="nav-logo-meta">
+        <span class="nav-logo-studio">Karuga Studios</span>
+        <span class="nav-logo-engine">Unreal Engine 5</span>
+      </div>
+    </a>
+
+    
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <span class="nav-sep">·</span>
+      <li><a href="#videos">Videos</a></li>
+      <span class="nav-sep">·</span>
+      <li><a href="#band">The Band</a></li>
+      <span class="nav-sep">·</span>
+      <li><a href="#music">Music System</a></li>
+      <span class="nav-sep">·</span>
+      <li><a href="#soundtrack">Soundtrack</a></li>
+      <span class="nav-sep">·</span>
+      <li><a href="#narrative">Story</a></li>
+      <span class="nav-sep">·</span>
+      <li><a href="#investor">Investors</a></li>
+    </ul>
+
+    
+    <div style="display:flex;align-items:center;gap:1rem">
+      <a href="https://karuga.nl/horror-engine" target="_blank" class="nav-cta">▶ Play Demo</a>
+      <div class="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section id="hero">
+  <div class="hero-bg-img"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-grid-floor"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Karuga Studios &nbsp;·&nbsp; Unreal Engine 5 &nbsp;·&nbsp; 2025</div>
+    <h1 class="hero-title">
+      <span class="hero-title-red">FIEND</span>
+    </h1>
+    <p class="hero-sub">
+      A first-person psychological horror game set in a decaying family entertainment center —
+      where liminality, claymation, and musical film collapse into horror-punk synthwave.
+    </p>
+    <div class="hero-tags">
+      <span class="tag">Psychological Horror</span>
+      <span class="tag">Horror-Punk Synthwave</span>
+      <span class="tag">Claymation Aesthetic</span>
+      <span class="tag">Liminal Spaces</span>
+      <span class="tag">Interactive Music</span>
+    </div>
+    <div class="hero-ctas">
+      <a href="https://karuga.nl/horror-engine" target="_blank" class="btn btn-primary">▶ Play the Demo</a>
+      <a href="#about" class="btn btn-outline">Discover More</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <div class="section-label">What is FIEND</div>
+        <h2 class="section-title">The <span>Horror</span><br>Musical</h2>
+        <p>
+          <strong>[FIEND]</strong> is a parasitic puppet master — spreading through a decaying family
+          entertainment center via living audio cables. It hijacks the animatronic band
+          <strong>[KIELZOG]</strong>, turning their music into a weapon against you.
+        </p>
+        <p>
+          The environment consumes itself through audio cables like overgrowth, with liminal spaces
+          that shift based on sound. Every corridor breathes. Every note is a threat.
+        </p>
+        <p>
+          Follow the cat <strong>[VRIENDJE]</strong> into the darkness.
+          Escape, help her, and uncover what FIEND truly is.
+        </p>
+        <div class="feature-grid">
+          <div class="feat">
+            <div class="feat-icon">🎵</div>
+            <h4>Music-Driven Horror</h4>
+            <p>Shadow and music puzzles — manipulate light and sound to survive each band member.</p>
+          </div>
+          <div class="feat">
+            <div class="feat-icon">🎭</div>
+            <h4>Claymation Aesthetic</h4>
+            <p>KIELZOG moves with the unsettling imperfect rhythm of LAIKA-inspired animation.</p>
+          </div>
+          <div class="feat">
+            <div class="feat-icon">🎪</div>
+            <h4>Liminal Spaces</h4>
+            <p>Rooms that defy logic. A decayed entertainment center consumed by dread.</p>
+          </div>
+          <div class="feat">
+            <div class="feat-icon">🔊</div>
+            <h4>Reactive Soundscape</h4>
+            <p>Music, environment, and enemy behavior are woven into one living system.</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual reveal reveal-delay-2">
+        <div class="about-img-wrap">
+          <img src="img-hero.png" alt="FIEND — hallway concept art" data-lightbox>
+        </div>
+        <div class="about-img-wrap">
+          <img src="img-about.png" alt="What is FIEND — overview" data-lightbox>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+
+<section id="videos">
+  <div class="section-inner">
+    <div class="section-label">Build Footage</div>
+    <h2 class="section-title reveal">Dev <span>Videos</span></h2>
+    <div class="videos-grid">
+      <div class="reveal">
+        <div class="video-card-label">// Build — 01</div>
+        <div class="video-frame">
+          <div class="corner tl"></div><div class="corner tr"></div>
+          <div class="corner bl"></div><div class="corner br"></div>
+          <iframe src="https://www.youtube.com/embed/aOS468e7Jmk"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="video-card-label">// Build — 02</div>
+        <div class="video-frame">
+          <div class="corner tl"></div><div class="corner tr"></div>
+          <div class="corner bl"></div><div class="corner br"></div>
+          <iframe src="https://www.youtube.com/embed/6w1zUM-YXyI"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+
+<section id="band">
+  <div class="section-inner">
+
+    <!-- Header -->
+    <div class="band-header reveal">
+      <div class="section-label" style="justify-content:center">The Animatronic Band</div>
+      <h2 class="section-title">Meet <span>KIELZOG</span></h2>
+      <p class="band-intro">
+        <span class="hl">[KIELZOG]</span> is always trailing in your wake — using their music to deceive
+        you or give unintended hints. Hijacked by <span class="hl">[FIEND]</span>, performing as puppets
+        in a horror show with no exit. Each member demands a different strategy to defeat.
+      </p>
+    </div>
+
+    
+    <div class="band-overview-wrap reveal" data-lightbox data-src="img-band-clean.png">
+      <img src="img-band-clean.png" alt="KIELZOG — full band lineup" class="band-overview-img">
+    </div>
+
+    
+    <div class="band-cards">
+
+      <!-- DD -->
+      <div class="band-card reveal">
+        <div class="band-card-img-wrap">
+          <img src="img-dd-clean.png" alt="DD — The Drummer" class="band-card-img" data-lightbox>
+        </div>
+        <div class="band-card-body">
+          <div class="band-card-action">RUN</div>
+          <div class="band-card-role">Drummer</div>
+          <div class="band-card-name">[DD]</div>
+          <p class="band-card-desc">Fast, chaotic, and easily distracted. Hear the rhythm building? That's him closing in — chasing every sound you make.</p>
+          <div class="band-card-mechanic">
+            <h5>Gameplay Mechanic</h5>
+            <p>Relies entirely on sound. Chases any noise — very predictable, but relentless once locked on.</p>
+            <div class="band-card-tags">
+              <span class="btag">Echo Tracking</span>
+              <span class="btag">Relentless Pursuer</span>
+              <span class="btag">Easily Distracted</span>
+              <span class="btag">Sound Overload</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- B-BACKER -->
+      <div class="band-card reveal reveal-delay-1">
+        <div class="band-card-img-wrap">
+          <img src="img-bbacker-clean.png" alt="B-Backer — The Bass Player" class="band-card-img" data-lightbox>
+        </div>
+        <div class="band-card-body">
+          <div class="band-card-action">HIDE</div>
+          <div class="band-card-role">Bass Player</div>
+          <div class="band-card-name">[B-BACKER]</div>
+          <p class="band-card-desc">Silent. Brooding. Lurks in the shadows — you won't hear him coming, only feel the bass resonating in your chest.</p>
+          <div class="band-card-mechanic">
+            <h5>Gameplay Mechanic</h5>
+            <p>Sticks to the background. Hates sudden noises. The best way to avoid him is hiding, not running.</p>
+            <div class="band-card-tags">
+              <span class="btag">Shadow Walker</span>
+              <span class="btag">Lurking Predator</span>
+              <span class="btag">Hates Sudden Noises</span>
+              <span class="btag">Anchored in Shadows</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GRAAFS -->
+      <div class="band-card reveal reveal-delay-2">
+        <div class="band-card-img-wrap">
+          <img src="img-graafs-clean.png" alt="Graafs — The Guitarist" class="band-card-img" data-lightbox>
+        </div>
+        <div class="band-card-body">
+          <div class="band-card-action">LOOK</div>
+          <div class="band-card-role">Guitarist</div>
+          <div class="band-card-name">[GRAAFS]</div>
+          <p class="band-card-desc">Aggressive, destructive, unpredictable. His riff is his fury — few who've heard his solo have been seen again.</p>
+          <div class="band-card-mechanic">
+            <h5>Gameplay Mechanic</h5>
+            <p>Easily provoked and blinded by rage. Use that uncontrolled fury against him.</p>
+            <div class="band-card-tags">
+              <span class="btag">Rage Boost</span>
+              <span class="btag">Audio Saboteur</span>
+              <span class="btag">Short Fuse</span>
+              <span class="btag">Uncontrolled Agro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- VEIL -->
+      <div class="band-card reveal reveal-delay-3">
+        <div class="band-card-img-wrap">
+          <img src="img-veil-clean.png" alt="Veil — The Vocalist" class="band-card-img" data-lightbox>
+        </div>
+        <div class="band-card-body">
+          <div class="band-card-action">DIE</div>
+          <div class="band-card-role">Vocalist</div>
+          <div class="band-card-name">[VEIL]</div>
+          <p class="band-card-desc">Jealous, envious, attention-seeking, narcissistic. He craves your gaze. Look at him while he sings — or you die.</p>
+          <div class="band-card-mechanic">
+            <h5>Gameplay Mechanic</h5>
+            <p>If you look at him while he sings, he stays calm. Do. Not. Turn away.</p>
+            <div class="band-card-tags">
+              <span class="btag">Mimicry</span>
+              <span class="btag">Mirror Stun</span>
+              <span class="btag">Ambush Specialist</span>
+              <span class="btag">Self-Centered</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /band-cards -->
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════ MUSIC SYSTEM ══════════════ -->
+<section id="music">
+  <div class="section-inner">
+    <div class="section-label">Interactive Audio Architecture</div>
+    <h2 class="section-title reveal">The <span>Music</span><br>System</h2>
+    <img src="img-music.png" alt="FIEND Music System Architecture" class="music-slide-img reveal" data-lightbox>
+    <div class="music-layout">
+      <div class="music-text reveal">
+        <p>The interactive soundtrack runs on two synchronized layers — a hybrid soundscape where music, environment, and enemy behavior are tightly integrated. <strong>FIEND's influence is heard as clearly as it is seen.</strong></p>
+        <p><strong>Digital Entity Layer (2D / Non-Diegetic):</strong> FIEND's signal processes the base synthesizer through distortion, modulation, and dynamic parameter changes — reflecting story tension and player actions in real time.</p>
+        <p><strong>KIELZOG Layer (3D / Diegetic):</strong> Each band member operates as an independent audio node in 3D space. Their performance is controlled by FIEND via tempo, filtering, intensity, and rhythmic variation — a narrative-driven musical performance that bleeds into gameplay.</p>
+      </div>
+      <div class="arch-diagram reveal reveal-delay-2">
+        <div class="arch-title">// System Architecture Overview</div>
+        <div class="arch-center"><div class="node node-fiend">FIEND</div></div>
+        <div class="arch-line">│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│</div>
+        <div class="arch-row">
+          <div class="node node-digital node-sm" style="text-align:center;line-height:1.3">Digital Entity<br><span style="font-size:0.5rem;opacity:0.6">(2D / Non-Diegetic)</span></div>
+          <div class="node node-kielzog node-sm" style="text-align:center;line-height:1.3">KIELZOG<br><span style="font-size:0.5rem;opacity:0.6">(3D / Diegetic)</span></div>
+        </div>
+        <div class="arch-line" style="text-align:right;margin-right:10%">│&nbsp;&nbsp;│&nbsp;&nbsp;│&nbsp;&nbsp;│</div>
+        <div class="arch-row" style="gap:0.4rem">
+          <div class="node node-base node-sm">Base</div>
+          <div class="node node-drums node-sm">Drums</div>
+          <div class="node node-bass node-sm">Bass</div>
+          <div class="node node-guitar node-sm">Guitar</div>
+          <div class="node node-vocal node-sm">Vocal</div>
+        </div>
+        <div class="layer-list">
+          <div class="layer-item"><div class="layer-dot" style="background:var(--blood)"></div><p><strong>FIEND</strong> — Main controller managing both audio layers</p></div>
+          <div class="layer-item"><div class="layer-dot" style="background:#4a9eff"></div><p><strong>Digital Entity</strong> — Synthesis with distorted influences</p></div>
+          <div class="layer-item"><div class="layer-dot" style="background:#a855f7"></div><p><strong>KIELZOG</strong> — 3D punk band performing as 4 audio nodes</p></div>
+          <div class="layer-item"><div class="layer-dot" style="background:var(--neon-green)"></div><p><strong>Base Music</strong> — Enhances story progress and tension</p></div>
+          <div class="layer-item"><div class="layer-dot" style="background:#fb923c"></div><p><strong>Drums</strong> — Percussive rhythmic element</p></div>
+          <div class="layer-item"><div class="layer-dot" style="background:#fbbf24"></div><p><strong>Bass</strong> — Low-frequency foundation element</p></div>
+          <div class="layer-item"><div class="layer-dot" style="background:#f87171"></div><p><strong>Guitar</strong> — Melodic and harmonic element</p></div>
+          <div class="layer-item"><div class="layer-dot" style="background:#c084fc"></div><p><strong>Vocal</strong> — Lyrical and melodic expression</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ SOUNDTRACK ══════════════ -->
+<section id="soundtrack">
+  <div class="section-inner">
+    <div class="section-label">Soundtrack</div>
+    <div class="playlist-layout">
+      <div class="playlist-text reveal">
+        <h2 class="section-title" style="font-size:clamp(2.2rem,4.5vw,4rem)">Horror<br><span>Punk</span><br>Synthwave</h2>
+        <p>The FIEND soundtrack is a living score — horror-punk synthwave that bends and distorts as the story unfolds. Every track is composed as part of the interactive music system.</p>
+        <p>Each piece was built to breathe inside the game's reactive audio engine. Listen, and hear what FIEND sounds like.</p>
+        <a href="https://www.youtube.com/playlist?list=PL7UDzbprhGcY4HIEwxmuW6TksD0pDnrtQ" target="_blank" class="btn btn-outline" style="margin-top:1rem">▶ Full Playlist on YouTube</a>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="video-frame" style="aspect-ratio:auto;height:340px">
+          <div class="corner tl"></div><div class="corner tr"></div>
+          <div class="corner bl"></div><div class="corner br"></div>
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PL7UDzbprhGcY4HIEwxmuW6TksD0pDnrtQ"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy" style="width:100%;height:100%;border:none;display:block"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ══════════════ NARRATIVE ══════════════ -->
+<section id="narrative">
+  <div class="section-inner">
+    <div class="section-label">Vertical Slice · 1–2 Hours Playtime</div>
+    <h2 class="section-title reveal">The <span>Story</span></h2>
+    <img src="img-narrative.png" alt="FIEND Narrative Flowchart" class="narrative-slide-img reveal" data-lightbox>
+    <div class="narrative-intro reveal">
+      <p>Following the cat <strong>[VRIENDJE]</strong> leads you into a decayed family entertainment center. Your goal becomes clear: escape, help the cat, and uncover the mystery of FIEND. Three endings await — only one is a true escape.</p>
+    </div>
+    <div class="flow-box reveal">
+      <div class="flow-row">
+        <div class="flow-node start">Start Game</div>
+        <div class="flow-arrow">▶</div>
+        <div class="flow-node start">The Choice</div>
+        <div class="flow-arrow">▶</div>
+        <div class="flow-node">Back Home</div>
+        <div class="flow-arrow">▶</div>
+        <div class="flow-node routine">Routine Ending ↺</div>
+      </div>
+      <div class="flow-row" style="margin-left:1.5rem">
+        <span style="color:rgba(204,17,17,0.4);font-size:1.2rem">▼</span>
+      </div>
+      <div class="flow-row">
+        <div class="flow-node">Trapped</div>
+        <div class="flow-arrow">▶</div>
+        <div class="flow-node">Face KIELZOG</div>
+        <div class="flow-arrow">▶</div>
+        <div class="flow-node">Defeat KIELZOG</div>
+        <div class="flow-arrow">▶</div>
+        <div class="flow-node">Home Sweet Home</div>
+        <div class="flow-arrow">▶</div>
+        <div class="flow-node good">✓ Good Ending</div>
+      </div>
+      <div class="flow-row" style="margin-left:9rem">
+        <span style="color:rgba(204,17,17,0.4);font-size:1.2rem">▼</span>
+      </div>
+      <div class="flow-row">
+        <div class="flow-node bad">✗ Bad Ending</div>
+        <div class="flow-arrow">◀</div>
+        <div class="flow-node">Endless Stairs</div>
+        <div class="flow-arrow">◀</div>
+        <div class="flow-node">Caught by KIELZOG</div>
+      </div>
+      <div class="endings-grid">
+        <div class="ending-card">
+          <h4 class="good">✓ Good Ending — Home Sweet Home</h4>
+          <p>You free [VRIENDJE], escape the building, and awaken safely in your bed. The small black cat sleeps at your feet. FIEND is still out there.</p>
+        </div>
+        <div class="ending-card">
+          <h4 class="bad">✗ Bad Ending — Caught by KIELZOG</h4>
+          <p>You fail to escape KIELZOG and FIEND. A haunting death animation plays as you awaken from a nightmare. The loop resets.</p>
+        </div>
+        <div class="ending-card">
+          <h4 class="bad">✗ Bad Ending — Endless Stairs</h4>
+          <p>You flee into the basement. The walls close in and reality fades. You are becoming one with [FIEND].</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ PLAY CTA ══════════════ -->
+<section id="playable">
+  <div class="playable-inner">
+    <div class="section-label" style="justify-content:center">Available Now</div>
+    <h2 class="section-title reveal" style="font-size:clamp(3rem,9vw,8rem)">Play the <span>Demo</span></h2>
+    <p class="reveal">A playable build of FIEND is live in your browser. Step into the entertainment center. Follow the cat. Survive the band.</p>
+    <a href="https://karuga.nl/horror-engine" target="_blank" class="btn btn-primary reveal" style="font-size:1.3rem;padding:1.1rem 3.5rem">▶ PLAY FIEND NOW</a>
+    <div class="play-warning">Browser-based · No download required · Headphones strongly recommended</div>
+  </div>
+</section>
+
+<!-- ══════════════ INVESTOR ══════════════ -->
+<section id="investor">
+  <div class="section-inner">
+    <div class="section-label">For Investors &amp; Partners</div>
+    <div class="stat-row reveal">
+      <div class="stat-card"><span class="stat-num">1–2h</span><span class="stat-label">Vertical Slice Playtime</span></div>
+      <div class="stat-card"><span class="stat-num">4</span><span class="stat-label">Unique Enemy Designs</span></div>
+      <div class="stat-card"><span class="stat-num">2</span><span class="stat-label">Reactive Music Layers</span></div>
+      <div class="stat-card"><span class="stat-num">UE5</span><span class="stat-label">Unreal Engine 5</span></div>
+    </div>
+    <div class="investor-layout">
+      <div class="pitch-text reveal">
+        <h3>Why <span style="color:var(--blood)">FIEND</span>?</h3>
+        <p>FIEND occupies a unique position in the indie horror market — combining the genre tension of <strong>Five Nights at Freddy's</strong> with the sound-driven design of <strong>Hellblade</strong>, wrapped in a visual language inspired by LAIKA studios and 90s claymation horror.</p>
+        <p>The reactive music system is not a feature — it's the core mechanic. No other horror game makes the soundtrack itself the enemy.</p>
+        <ul class="pitch-pillars">
+          <li>Strong visual identity — instantly recognizable art direction</li>
+          <li>Unique hybrid music system with full IP ownership</li>
+          <li>Playable vertical slice demonstrates proof of concept</li>
+          <li>Clear target demographic: horror + indie fans, 18–35</li>
+          <li>Built on Unreal Engine 5 — scalable to full release</li>
+          <li>Claymation aesthetic differentiates from low-fidelity indie horror</li>
+          <li>Modular enemy system — each band member is a distinct experience</li>
+          <li>Horror-punk synthwave soundtrack with licensing potential</li>
+        </ul>
+      </div>
+      <div class="contact-box reveal reveal-delay-2">
+        <div class="contact-box-title">// Studio &amp; Contact</div>
+        <p>FIEND is currently in vertical slice phase and seeking publishing partnerships, funding, and co-development opportunities.</p>
+        <div class="contact-detail">
+          <span class="contact-detail-label">Studio</span>
+          <span class="contact-detail-val">KARUGA</span>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-label">Website</span>
+          <a href="https://karuga.nl" target="_blank" class="contact-detail-link">karuga.nl</a>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-label">Playable Build</span>
+          <a href="https://karuga.nl/horror-engine" target="_blank" class="contact-detail-link">karuga.nl/horror-engine</a>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-label">Soundtrack</span>
+          <a href="https://www.youtube.com/playlist?list=PL7UDzbprhGcY4HIEwxmuW6TksD0pDnrtQ" target="_blank" class="contact-detail-link">YouTube Playlist</a>
+        </div>
+        <div style="margin-top:2rem">
+          <a href="https://karuga.nl/horror-engine" target="_blank" class="btn btn-primary" style="display:block;text-align:center;width:100%">▶ Experience the Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <span class="footer-logo">FIEND</span>
+  <div class="footer-studio">By Karuga Studios</div>
+  <nav class="footer-links">
+    <a href="#about">About</a>
+    <a href="#videos">Videos</a>
+    <a href="#band">The Band</a>
+    <a href="#music">Music System</a>
+    <a href="#narrative">Story</a>
+    <a href="https://karuga.nl/horror-engine" target="_blank">Play Demo</a>
+    <a href="https://www.youtube.com/playlist?list=PL7UDzbprhGcY4HIEwxmuW6TksD0pDnrtQ" target="_blank">Soundtrack</a>
+    <a href="https://karuga.nl" target="_blank">karuga.nl</a>
+  </nav>
+  <div class="footer-engine">⚙ Built with Unreal Engine 5</div>
+  <div class="footer-copy">© 2025 Karuga Studios · All rights reserved · FIEND is a trademark of Karuga Studios</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
