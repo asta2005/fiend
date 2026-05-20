@@ -11,17 +11,33 @@
 </head>
 <body>
 
-
+<!-- Overlays -->
 <div class="noise-layer"></div>
 <div class="scanline-layer"></div>
 
-
+<!-- ══════════════ IMAGE LIGHTBOX ══════════════ -->
 <div class="lightbox" id="lightbox">
   <div class="lightbox-close" id="lightbox-close">✕</div>
   <img id="lightbox-img" src="" alt="FIEND artwork">
 </div>
 
+<!-- ══════════════ INFO MODAL ══════════════ -->
+<div id="modal-overlay"></div>
+<div id="info-modal">
+  <div class="modal-topbar"></div>
+  <div class="modal-header">
+    <div class="modal-icon-wrap" id="modal-icon"></div>
+    <div class="modal-header-text">
+      <span class="modal-tag" id="modal-tag"></span>
+      <div class="modal-title" id="modal-title"></div>
+      <div class="modal-subtitle" id="modal-subtitle"></div>
+    </div>
+    <button id="modal-close">✕</button>
+  </div>
+  <div class="modal-body-wrap" id="modal-body"></div>
+</div>
 
+<!-- Mobile Nav -->
 <nav class="nav-mobile">
   <div class="nav-mobile-close">✕</div>
   <a href="#about">About</a>
@@ -34,11 +50,9 @@
   <a href="https://karuga.nl/horror-engine" target="_blank" style="color:#cc1111">▶ Play Demo</a>
 </nav>
 
-
+<!-- ══════════════ NAV ══════════════ -->
 <nav id="main-nav">
   <div class="nav-inner">
-
-   
     <a href="#hero" class="nav-logo">
       <span class="nav-logo-text">FIEND</span>
       <div class="nav-logo-divider"></div>
@@ -47,8 +61,6 @@
         <span class="nav-logo-engine">Unreal Engine 5</span>
       </div>
     </a>
-
-    
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <span class="nav-sep">·</span>
@@ -64,32 +76,22 @@
       <span class="nav-sep">·</span>
       <li><a href="#investor">Investors</a></li>
     </ul>
-
-    
     <div style="display:flex;align-items:center;gap:1rem">
       <a href="https://karuga.nl/horror-engine" target="_blank" class="nav-cta">▶ Play Demo</a>
-      <div class="hamburger">
-        <span></span><span></span><span></span>
-      </div>
+      <div class="hamburger"><span></span><span></span><span></span></div>
     </div>
-
   </div>
 </nav>
 
-
+<!-- ══════════════ HERO ══════════════ -->
 <section id="hero">
   <div class="hero-bg-img"></div>
   <div class="hero-overlay"></div>
   <div class="hero-grid-floor"></div>
   <div class="hero-content">
     <div class="hero-eyebrow">Karuga Studios &nbsp;·&nbsp; Unreal Engine 5 &nbsp;·&nbsp; 2025</div>
-    <h1 class="hero-title">
-      <span class="hero-title-red">FIEND</span>
-    </h1>
-    <p class="hero-sub">
-      A first-person psychological horror game set in a decaying family entertainment center —
-      where liminality, claymation, and musical film collapse into horror-punk synthwave.
-    </p>
+    <h1 class="hero-title"><span class="hero-title-red">FIEND</span></h1>
+    <p class="hero-sub">A first-person psychological horror game set in a decaying family entertainment center — where liminality, claymation, and musical film collapse into horror-punk synthwave.</p>
     <div class="hero-tags">
       <span class="tag">Psychological Horror</span>
       <span class="tag">Horror-Punk Synthwave</span>
@@ -102,55 +104,45 @@
       <a href="#about" class="btn btn-outline">Discover More</a>
     </div>
   </div>
-  <div class="hero-scroll">
-    <span>Scroll</span>
-    <div class="scroll-line"></div>
-  </div>
+  <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
 </section>
 
-
+<!-- ══════════════ ABOUT ══════════════ -->
 <section id="about">
   <div class="section-inner">
     <div class="about-grid">
       <div class="about-text reveal">
         <div class="section-label">What is FIEND</div>
         <h2 class="section-title">The <span>Horror</span><br>Musical</h2>
-        <p>
-          <strong>[FIEND]</strong> is a parasitic puppet master — spreading through a decaying family
-          entertainment center via living audio cables. It hijacks the animatronic band
-          <strong>[KIELZOG]</strong>, turning their music into a weapon against you.
-        </p>
-        <p>
-          The environment consumes itself through audio cables like overgrowth, with liminal spaces
-          that shift based on sound. Every corridor breathes. Every note is a threat.
-        </p>
-        <p>
-          Follow the cat <strong>[VRIENDJE]</strong> into the darkness.
-          Escape, help her, and uncover what FIEND truly is.
-        </p>
+        <p><strong>[FIEND]</strong> is a parasitic puppet master — spreading through a decaying family entertainment center via living audio cables. It hijacks the animatronic band <strong>[KIELZOG]</strong>, turning their music into a weapon against you.</p>
+        <p>The environment consumes itself through audio cables like overgrowth, with liminal spaces that shift based on sound. Every corridor breathes. Every note is a threat.</p>
+        <p>Follow the cat <strong>[VRIENDJE]</strong> into the darkness. Escape, help her, and uncover what FIEND truly is.</p>
+
+        <!-- CLICKABLE FEATURE BOXES -->
         <div class="feature-grid">
-          <div class="feat">
+          <div class="feat" data-modal="music-driven">
             <div class="feat-icon">🎵</div>
             <h4>Music-Driven Horror</h4>
             <p>Shadow and music puzzles — manipulate light and sound to survive each band member.</p>
           </div>
-          <div class="feat">
+          <div class="feat" data-modal="claymation">
             <div class="feat-icon">🎭</div>
             <h4>Claymation Aesthetic</h4>
             <p>KIELZOG moves with the unsettling imperfect rhythm of LAIKA-inspired animation.</p>
           </div>
-          <div class="feat">
+          <div class="feat" data-modal="liminal">
             <div class="feat-icon">🎪</div>
             <h4>Liminal Spaces</h4>
             <p>Rooms that defy logic. A decayed entertainment center consumed by dread.</p>
           </div>
-          <div class="feat">
+          <div class="feat" data-modal="soundscape">
             <div class="feat-icon">🔊</div>
             <h4>Reactive Soundscape</h4>
             <p>Music, environment, and enemy behavior are woven into one living system.</p>
           </div>
         </div>
       </div>
+
       <div class="about-visual reveal reveal-delay-2">
         <div class="about-img-wrap">
           <img src="img-hero.png" alt="FIEND — hallway concept art" data-lightbox>
@@ -165,7 +157,7 @@
 
 <div class="divider"></div>
 
-
+<!-- ══════════════ VIDEOS ══════════════ -->
 <section id="videos">
   <div class="section-inner">
     <div class="section-label">Build Footage</div>
@@ -176,9 +168,7 @@
         <div class="video-frame">
           <div class="corner tl"></div><div class="corner tr"></div>
           <div class="corner bl"></div><div class="corner br"></div>
-          <iframe src="https://www.youtube.com/embed/aOS468e7Jmk"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube.com/embed/aOS468e7Jmk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
       </div>
       <div class="reveal reveal-delay-2">
@@ -186,9 +176,7 @@
         <div class="video-frame">
           <div class="corner tl"></div><div class="corner tr"></div>
           <div class="corner bl"></div><div class="corner br"></div>
-          <iframe src="https://www.youtube.com/embed/6w1zUM-YXyI"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube.com/embed/6w1zUM-YXyI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
         </div>
       </div>
     </div>
@@ -197,29 +185,20 @@
 
 <div class="divider"></div>
 
-
+<!-- ══════════════ BAND ══════════════ -->
 <section id="band">
   <div class="section-inner">
-
-    <!-- Header -->
     <div class="band-header reveal">
       <div class="section-label" style="justify-content:center">The Animatronic Band</div>
       <h2 class="section-title">Meet <span>KIELZOG</span></h2>
-      <p class="band-intro">
-        <span class="hl">[KIELZOG]</span> is always trailing in your wake — using their music to deceive
-        you or give unintended hints. Hijacked by <span class="hl">[FIEND]</span>, performing as puppets
-        in a horror show with no exit. Each member demands a different strategy to defeat.
-      </p>
+      <p class="band-intro"><span class="hl">[KIELZOG]</span> is always trailing in your wake — using their music to deceive you or give unintended hints. Hijacked by <span class="hl">[FIEND]</span>, performing as puppets in a horror show with no exit. Each member demands a different strategy to defeat.</p>
     </div>
 
-    
     <div class="band-overview-wrap reveal" data-lightbox data-src="img-band-clean.png">
       <img src="img-band-clean.png" alt="KIELZOG — full band lineup" class="band-overview-img">
     </div>
 
-    
     <div class="band-cards">
-
       <!-- DD -->
       <div class="band-card reveal">
         <div class="band-card-img-wrap">
@@ -242,7 +221,6 @@
           </div>
         </div>
       </div>
-
       <!-- B-BACKER -->
       <div class="band-card reveal reveal-delay-1">
         <div class="band-card-img-wrap">
@@ -265,7 +243,6 @@
           </div>
         </div>
       </div>
-
       <!-- GRAAFS -->
       <div class="band-card reveal reveal-delay-2">
         <div class="band-card-img-wrap">
@@ -288,7 +265,6 @@
           </div>
         </div>
       </div>
-
       <!-- VEIL -->
       <div class="band-card reveal reveal-delay-3">
         <div class="band-card-img-wrap">
@@ -311,8 +287,7 @@
           </div>
         </div>
       </div>
-
-    </div><!-- /band-cards -->
+    </div>
   </div>
 </section>
 
@@ -376,9 +351,7 @@
         <div class="video-frame" style="aspect-ratio:auto;height:340px">
           <div class="corner tl"></div><div class="corner tr"></div>
           <div class="corner bl"></div><div class="corner br"></div>
-          <iframe src="https://www.youtube.com/embed/videoseries?list=PL7UDzbprhGcY4HIEwxmuW6TksD0pDnrtQ"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen loading="lazy" style="width:100%;height:100%;border:none;display:block"></iframe>
+          <iframe src="https://www.youtube.com/embed/videoseries?list=PL7UDzbprhGcY4HIEwxmuW6TksD0pDnrtQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="width:100%;height:100%;border:none;display:block"></iframe>
         </div>
       </div>
     </div>
@@ -394,7 +367,7 @@
     <h2 class="section-title reveal">The <span>Story</span></h2>
     <img src="img-narrative.png" alt="FIEND Narrative Flowchart" class="narrative-slide-img reveal" data-lightbox>
     <div class="narrative-intro reveal">
-      <p>Following the cat <strong>[VRIENDJE]</strong> leads you into a decayed family entertainment center. Your goal becomes clear: escape, help the cat, and uncover the mystery of FIEND. Three endings await — only one is a true escape.</p>
+      <p>Following the cat <strong>[VRIENDJE]</strong> leads you into a decayed family entertainment center. Your goal becomes clear: escape, help the cat, and uncover the mystery of FIEND. Three endings await — only one is a true escape. <em style="color:var(--muted);font-size:0.85rem">Click any ending below to learn more.</em></p>
     </div>
     <div class="flow-box reveal">
       <div class="flow-row">
@@ -430,16 +403,18 @@
         <div class="flow-arrow">◀</div>
         <div class="flow-node">Caught by KIELZOG</div>
       </div>
+
+      <!-- CLICKABLE ENDING CARDS -->
       <div class="endings-grid">
-        <div class="ending-card">
+        <div class="ending-card" data-modal="ending-good">
           <h4 class="good">✓ Good Ending — Home Sweet Home</h4>
           <p>You free [VRIENDJE], escape the building, and awaken safely in your bed. The small black cat sleeps at your feet. FIEND is still out there.</p>
         </div>
-        <div class="ending-card">
+        <div class="ending-card" data-modal="ending-caught">
           <h4 class="bad">✗ Bad Ending — Caught by KIELZOG</h4>
           <p>You fail to escape KIELZOG and FIEND. A haunting death animation plays as you awaken from a nightmare. The loop resets.</p>
         </div>
-        <div class="ending-card">
+        <div class="ending-card" data-modal="ending-stairs">
           <h4 class="bad">✗ Bad Ending — Endless Stairs</h4>
           <p>You flee into the basement. The walls close in and reality fades. You are becoming one with [FIEND].</p>
         </div>
