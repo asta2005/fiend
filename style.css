@@ -396,6 +396,10 @@ nav#main-nav.scrolled .nav-inner { padding: 0.45rem 3rem; }
 .flow-row { display:flex; align-items:center; gap:0.75rem; margin-bottom:1.2rem; flex-wrap:wrap; }
 .flow-node { font-family:var(--font-display); font-size:0.85rem; letter-spacing:0.12em; padding:0.55rem 1.1rem; border:1px solid rgba(200,200,200,0.2); color:var(--cream); white-space:nowrap; transition:all 0.2s; }
 .flow-node:hover { border-color:var(--blood); color:var(--blood); }
+.flow-node[data-modal] { cursor:pointer; position:relative; }
+.flow-node[data-modal]::after { content:'›'; position:absolute; top:50%; right:0.35rem; transform:translateY(-50%); font-size:0.7rem; opacity:0.4; transition:opacity 0.2s; }
+.flow-node[data-modal]:hover::after { opacity:1; }
+.flow-node[data-modal]:hover { box-shadow:0 0 10px rgba(204,17,17,0.3); transform:translateY(-1px); }
 .flow-node.start  { border-color:var(--blood); color:var(--blood); background:rgba(204,17,17,0.09); }
 .flow-node.good   { border-color:var(--neon-green); color:var(--neon-green); background:rgba(0,255,136,0.07); font-size:0.72rem; }
 .flow-node.bad    { border-color:#ff6b35; color:#ff6b35; background:rgba(255,107,53,0.07); font-size:0.72rem; }
